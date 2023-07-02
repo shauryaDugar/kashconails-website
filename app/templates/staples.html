@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+
+<!-- Product Details Section -->
+<section id="product-details" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Staples</h2>
+                <p>Used for woodworking, home improvement, and upholstery, staples are a great alternative to glue, nails, and screws—especially on material prone to splitting. A staple gun is an indispensable item in the art studio, used for everything from stretching canvas to hanging photo backdrops. Staple guns come in many styles: manual guns are handheld, spring-loaded devices that fire staples when their levers are depressed; pneumatic guns use air pressure to fire heavier-gauge staples; electric staple guns use either a battery or plug to apply staples with the pull of a trigger. Pneumatic guns tend to be the most powerful, but require an air compressor to work. For light-duty projects, a manual or electric gun may be the answer. Staple thickness is measured in gauge: the lower the gauge, the thicker the staple. Many staple guns can apply brackets and straight pins too.</p>
+                <p>Available Series: 10j, 23, 4j, 80</p>
+                <!-- <p>Size: Small, Medium, Large</p> -->
+                <img src="./../static/img/staples-2.jpeg" class="h-25 w-75"> 
+                <img src="./../static/img/staples-3.jpeg" class="h-25 w-75 pt-5"> 
+            </div>
+            <div class="col-md-6">
+                <img src="./../static/img/staple-pin-10j.png" alt="Product Image" class="img-fluid">
+                <img src="./../static/img/staple-pin-23.png" alt="Product Image" class="img-fluid">
+                <img src="./../static/img/staple-pin-4j.png" alt="Product Image" class="img-fluid">
+                <img src="./../static/img/staple-pin-80.png" alt="Product Image" class="img-fluid">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Request a Quote Section -->
+<section id="quote" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Request a Quote</h2>
+                <form action="" method="POST">
+                    <div class="mb-3">
+                        <label for="product-name" class="form-label">Product Name</label>
+                        <input type="text" class="form-control bg-white" id="product-name" name="product-name" value="Staple" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Please write the details of the product you want to get a quote of, which size, series, etc."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

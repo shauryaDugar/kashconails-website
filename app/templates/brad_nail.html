@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<!-- Product Details Section -->
+<section id="product-details" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Brad Nails</h2>
+                <p>Brad nails, Air gun Nails or Pneumatic Nails , are made of 16 and 18-gauge galvanized steel wire. Nail gauge sizes indicate the thickness of the nail. Thinner nails have higher gauge numbers. The small diameter of brad nails makes them easy to mask in wood trim or paneling. In addition to being thinner than standard nails, they also feature a smaller head. The slender profile of brad nails helps to prevent splitting on delicate material. Their subtle appearance often makes for a clean finish in various woodworking projects. Brad nails themselves are thin, they work best in thinner cuts of lumber, including fiberboard, hardwood, softwood, and plywood. The small diameter of brads means that your oulding and trim work will show less of a hole and might not need wood filler before painting.</p>
+                <p>Available: T and F Types</p>
+                <!-- <p>Size: Small, Medium, Large</p> -->
+                <img src="/../static/img/brad-nails-500x500.webp" class="h-25 w-75"> 
+                <img src="/../static/img/brad-nail-use.jpg" class="h-25 w-50 mt-4"> 
+            </div>
+            <div class="col-md-6">
+                <img src="./../static/img/brad-nail-t.png" alt="Product Image" class="img-fluid">
+                <img src="./../static/img/brad-nail-f.png" alt="Product Image" class="img-fluid">
+                <!-- <img src="./../static/img/staple-pin-4j.png" alt="Product Image" class="img-fluid">
+                <img src="./../static/img/staple-pin-80.png" alt="Product Image" class="img-fluid"> -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Request a Quote Section -->
+<section id="quote" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Request a Quote</h2>
+                <form action="" method="POST">
+                    <div class="mb-3">
+                        <label for="product-name" class="form-label">Product Name</label>
+                        <input type="text" class="form-control bg-white" id="product-name" name="product-name" value="Brad Nail" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Please write the details of the product you want to get a quote of, which size, series, etc."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
