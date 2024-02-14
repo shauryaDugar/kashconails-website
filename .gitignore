@@ -130,3 +130,6 @@ dmypy.json
 
 #virtualenv
 venv/
+
+#ssl certificate folder
+ssl/

@@ -69,6 +69,5 @@ def send_email_confirmation(name, email, subject, message):
     thr = Thread(target=send_async_email, args=[app, msg])
     thr.start()
 
-
 if __name__ == '__main__':
     app.run(debug=True)
