@@ -25,4 +25,3 @@ RUN echo "server {" > /etc/nginx/conf.d/ssl.conf && \
     echo "        uwsgi_pass unix:///tmp/uwsgi.sock;" >> /etc/nginx/conf.d/ssl.conf && \
     echo "    }" >> /etc/nginx/conf.d/ssl.conf && \
     echo "}" >> /etc/nginx/conf.d/ssl.conf
-
